@@ -1,5 +1,5 @@
 # PROJECT_MM
-# *Hi, I'm Masha*
-# *I made this project together with Maria Rakhmanova*
+# IT'S OUR PROJECT FOR ITMO UNIVERSITY
+# With love: Maria Ershova and Maria Rakhmanova*
 ___________________
 :purple_heart::purple_heart::purple_heart::purple_heart::purple_heart:
