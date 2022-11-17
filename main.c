@@ -1,23 +1,31 @@
 #include <stdio.h>
 
-int main() {
-    int a, b, c, d, e;
-    printf("Введите число:\n");
-    scanf("%d", &a);
-    b = a;
-    d = a;
-    while ((a >= -77) && (a <= 1)) {
-        printf("\nЧисло %d попало в диапозон от -77 до 1\n", a);
-        a = 100;
+int main()
+{
+    const int amax = 1000;
+    int n[amax], key1, key2, j, i;
+    scanf("%d", &j);
+
+    for( i = 0; i < j; i++)
+        scanf("%d", &n[i]);
+    int k = 0;
+    key1 = n[0];
+    key2 = 2000000000;
+    for(int i = 0; i < j; i++) {
+        if (n[i] < key1) {
+            key1 = n[i];
+            k = i;
+        }
     }
-    while ((b < -77) | (b > 1)) {
-        printf("Число %d не попало в диапозон от -77 до 1\n\n", d);
-        b = 1;
+    for(int i = 0; i < j; i++){
+        if (n[i] < key2 && n[i] >= key1 && k != i){
+            key2 = n[i];
+        }
     }
-    e = 0;
-    printf("Введите число:\n");
-    scanf("%d", &c);
-    e = c & (1 << 18);
-    printf("Значение 18 бита?\n%s",(e != 0? "1" : "0"));
+        if (n[i] < key2 & n[i] > key1)
+            key2 = n[i];
+
+    printf("%d ", key1);
+    printf("%d ", key2);
     return 0;
 }
