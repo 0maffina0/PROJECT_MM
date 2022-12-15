@@ -1,5 +1,5 @@
 all:
- g++ -std=c++17 revision.cpp -o revision
+ g++ -std=c++17 revision.cpp -o revision.cpp
 
 test:
  chmod +x revision.cpp
