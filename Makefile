@@ -1,8 +1,8 @@
 all:
- g++ -std=c++17 main.cpp -o main.cpp
+ g++ -std=c++17 revision -o revision
 
 test:
- chmod +x main.cpp
+ chmod +x revision
 
 clean:
- $(RM) main.cpp
+ $(RM) revision
