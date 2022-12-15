@@ -1,10 +1,21 @@
-name: Demo
+name: C/C++ CI
 
-on: pull_request
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  agag:
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-    - name: OOOO
-      run: echo "HAHAHAHAHAHA"
+    - uses: actions/checkout@v2
+    - name: install cppunit
+      run: sudo apt install -y libcppunit-dev
+    - name: make
+      run: make
+    - name: make test
+      run: make test
