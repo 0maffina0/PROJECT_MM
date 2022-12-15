@@ -1,5 +1,5 @@
 all:
- g++ -std=c++17 main.cpp -o algorithms_1
+ g++ -std=c++17 main.cpp -o main.cpp
 
 test:
  chmod +x main.cpp
